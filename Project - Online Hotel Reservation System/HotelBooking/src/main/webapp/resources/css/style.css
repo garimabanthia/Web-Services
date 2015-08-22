@@ -1,0 +1,22 @@
+.error {
+		    font-size: 0.8em;
+			color: #ff0000;
+		}
+.floatleftimage
+{
+float:left;
+width:180px;
+height:140px;
+margin-right:15px;
+}
+.floatrightimage
+{
+float:right;
+width:180px;
+height:140px;
+margin-right:15px;
+}
+body {
+   background-color: black ; 
+   font: small/1.3 Arial, Helvetica, sans-serif; 
+}   

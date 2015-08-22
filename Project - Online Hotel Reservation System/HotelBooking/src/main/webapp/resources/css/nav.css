@@ -1,0 +1,134 @@
+nav ul ul 
+{
+	border-radius: 10px; 
+	display: none;	
+}
+nav ul li:hover > ul 
+{
+	display: block;
+}
+nav 
+{
+	width: 100%;
+	float: left;
+
+	padding: 0;
+	background: linear-gradient(top, red 0%, #700000 100%);  
+	background: -moz-linear-gradient(top, red 0%, #700000  100%); 
+	background: -webkit-linear-gradient(top, red 0%,#700000  100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.10);
+	list-style: none;
+	background-color: red ;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+	border-radius: 10px;
+}
+nav ul 
+{
+	float: left;
+	color: #000;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+nav ul:after 
+{
+	content: ""; clear: both; display: block;
+}
+nav ul li 
+{
+	font-size: 1.2em;
+	border-radius: 3px;
+	float: left;
+}
+
+nav ul li:hover 
+{ 
+	font-size: 1em;
+	color: red;
+}
+nav ul li:hover a 
+{
+	color: red;
+}
+nav ul li a 
+{
+	display: block; padding-left: 10px ;padding-right:10px;
+	color: black; text-decoration: none;
+}
+nav ul ul 
+{
+	width :200px;
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+	border-radius: 10px; 
+	background: #5f6975; border-radius: 10px; padding: 0;
+	position: absolute;
+}
+nav ul ul li 
+{
+	border-radius: 10px; 
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+nav ul ul li a 
+{
+	border-radius: 10px; 
+	padding: 5px 5px;
+	color: #fff;
+}	
+nav ul ul li a:hover 
+{
+	padding: 5px 5px;
+	border-radius: 10px; 
+	background: #000;
+}
+ #wrap { 
+      width: 900px;
+      height:auto;
+      margin: 0 auto 200px;
+      background-color: #FFDAB9; }
+   #titlebar {
+      width: 900px;
+      font-size: 1.5em;
+      color: #000;
+      background-color: #FFCC66;
+      margin: 0 auto; }
+   #content {
+   	  width: 900px;
+      padding: 30px; }
+      /* #nav {
+      width: 100%;
+      float: left;
+      margin: 0 0 3em 0;
+      padding: 0;
+      list-style: none;
+      background-color: red ;
+      border-bottom: 1px solid #ccc; 
+      border-top: 1px solid #ccc; }
+   #nav li {
+      float: left; }
+   #nav li a {
+      display: block;
+      padding: 8px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+      border-right: 1px solid #ccc; }
+   #nav li a:hover {
+      color: #c00;
+      background-color: #fff; }
+   End navigation bar styling.
+   
+   This is just styling for this specific page.
+
+ */

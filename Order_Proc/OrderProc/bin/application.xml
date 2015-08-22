@@ -1,0 +1,46 @@
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"  -->
+       <!--     "http://www.springframework.org/dtd/spring-beans.dtd"> -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+      xmlns:context="http://www.springframework.org/schema/context"
+      xmlns:c="http://www.springframework.org/schema/c"
+      xmlns:p="http://www.springframework.org/schema/p"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+      
+      
+ <!--       <context:property-placeholder location="classpath:Tax.properties"/> -->
+ <!-- 		add your bean definitions here! -->
+	
+	<bean id="acctServiceIntlRules" class="npu.services.AccountingServiceIntlRules" />
+		
+	<bean id = "AccountingServiceImpl" class = "npu.services.AccountingServiceImpl" >
+ 		<property name = "taxService" ref = "Saletax" > 
+ 			</property>
+	</bean>
+	
+	<bean id = "OrderProcessor" class ="npu.services.OrderProcessor" >
+ 		<property name = "acctService" ref = "AccountingServiceImpl" />  
+	 	<property name = "inventoryService" ref = "InventoryServiceImpl" /> 
+	 	
+	</bean>
+	 	
+			
+	<bean id = "InventoryServiceImpl" class = "npu.services.InventoryServiceImpl" >
+		
+	</bean>
+	
+	
+	
+	<bean id = "Saletax" class = "npu.services.TaxServiceImpl" >
+		   <property name = "tax" > 
+				<map> 
+	 				<entry key = "CA" value = "0.01" /> 
+	 				<entry key = "NV" value  = "0.02" />  
+				</map> 
+			</property>
+	</bean>
+</beans>
+
